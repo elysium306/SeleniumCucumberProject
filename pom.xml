@@ -72,7 +72,7 @@
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
-						<include>**/*SmokeTestRunner.java</include>
+						<include>**/*RegressionTestRunner.java</include>
 					</includes>
 				</configuration>
 			</plugin>
