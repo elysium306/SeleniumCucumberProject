@@ -19,5 +19,3 @@ Background:
     Then I should not be in the home page
     And There should an error message "Epic sadface: Username and password do not match any user in this service"
 
-  @SmokeTest
-  Scenario: Validate all the web elements on login page
