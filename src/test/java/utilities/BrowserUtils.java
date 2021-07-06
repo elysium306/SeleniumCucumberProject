@@ -89,7 +89,7 @@ public class BrowserUtils {
 	}
 
 	// this method is for deleting the pre-populated value of an input field with
-	// command + a keys event for mac
+	// command + a keys event for Mac
 	public void clearTextOfAField(WebElement element) {
 		element.sendKeys(Keys.chord(Keys.COMMAND), "a");
 		element.sendKeys(Keys.DELETE);
