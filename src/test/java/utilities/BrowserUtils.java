@@ -60,7 +60,7 @@ public class BrowserUtils {
 		return true;
 	}
 
-	// hoverover to an element
+	// hover over to an element
 	public void hoverOverToElement(WebElement element) {
 		act = new Actions(Driver.getDriver());
 		act.moveToElement(element).perform();

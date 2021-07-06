@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.RegressionTestRunner" time="212.834" tests="13" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\elysi\git\seleniumCucumberProject\target\test-classes;C:\Users\elysi\git\seleniumCucumberProject\target\classes;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\elysi\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\elysi\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\elysi\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\elysi\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\elysi\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\elysi\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\elysi\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\elysi\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\elysi\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\elysi\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-core\6.10.4\cucumber-core-6.10.4.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-gherkin\6.10.4\cucumber-gherkin-6.10.4.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.4\cucumber-gherkin-messages-6.10.4.jar;C:\Users\elysi\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\elysi\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\elysi\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-plugin\6.10.4\cucumber-plugin-6.10.4.jar;C:\Users\elysi\.m2\repository\io\cucumber\docstring\6.10.4\docstring-6.10.4.jar;C:\Users\elysi\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\elysi\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;C:\Users\elysi\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\elysi\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\elysi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;C:\Users\elysi\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.3\webdrivermanager-4.4.3.jar;C:\Users\elysi\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\elysi\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\elysi\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\elysi\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\elysi\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\elysi\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\elysi\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\elysi\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\elysi\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\elysi\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\elysi\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\elysi\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.1.0.0\ojdbc8-21.1.0.0.jar;C:\Users\elysi\.m2\repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar;C:\Users\elysi\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk15.0.2_7\bin"/>
+    <property name="sun.java.command" value="C:\Users\elysi\AppData\Local\Temp\surefire720642031625222308\surefirebooter12025003222533463375.jar C:\Users\elysi\AppData\Local\Temp\surefire720642031625222308 2021-06-30T00-06-14_238-jvmRun1 surefire7144020264006315167tmp surefire_06275121957184420608tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\elysi\git\seleniumCucumberProject\target\test-classes;C:\Users\elysi\git\seleniumCucumberProject\target\classes;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\elysi\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\elysi\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\elysi\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\elysi\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\elysi\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\elysi\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\elysi\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\elysi\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\elysi\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\elysi\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\elysi\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-core\6.10.4\cucumber-core-6.10.4.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-gherkin\6.10.4\cucumber-gherkin-6.10.4.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.4\cucumber-gherkin-messages-6.10.4.jar;C:\Users\elysi\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\elysi\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\elysi\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-plugin\6.10.4\cucumber-plugin-6.10.4.jar;C:\Users\elysi\.m2\repository\io\cucumber\docstring\6.10.4\docstring-6.10.4.jar;C:\Users\elysi\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\elysi\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;C:\Users\elysi\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\elysi\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\elysi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\elysi\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;C:\Users\elysi\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.3\webdrivermanager-4.4.3.jar;C:\Users\elysi\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\elysi\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\elysi\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\elysi\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\elysi\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\elysi\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\elysi\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\elysi\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\elysi\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\elysi\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\elysi\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\elysi\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.1.0.0\ojdbc8-21.1.0.0.jar;C:\Users\elysi\.m2\repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar;C:\Users\elysi\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\elysi"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk15.0.2_7"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\elysi\git\seleniumCucumberProject"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\elysi\AppData\Local\Temp\surefire720642031625222308\surefirebooter12025003222533463375.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="15.0.2+7"/>
+    <property name="user.name" value="elysium"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-15.0.2.7.1"/>
+    <property name="localRepository" value="C:\Users\elysi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-jdk/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\elysi\AppData\Local\Temp\"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="user.dir" value="C:\Users\elysi\git\seleniumCucumberProject"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk15.0.2_7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Amazon Corretto/jdk16.0.1_9/bin/server;C:/Program Files/Amazon Corretto/jdk16.0.1_9/bin;C:\Program Files\Amazon Corretto\jdk16.0.1_9\bin;C:\Program Files\Amazon Corretto\jdk15.0.2_7\bin;C:\Program Files\Amazon Corretto\jdk11.0.11_9\bin;C:\Program Files\Amazon Corretto\jdk1.8.0_292\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Ruby23-x64\bin;C:\Users\elysi\AppData\Local\Microsoft\WindowsApps;C:\Users\elysi\AppData\Local\atom\bin;C:\Users\elysi\AppData\Local\Microsoft\WindowsApps;C:\Users\elysi\.dotnet\tools;C:\Users\elysi\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.2\bin;;C:\Users\elysi\Desktop;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="15.0.2+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="Login Valid test" classname="Sauce Demo login tests" time="49.208">
+    <system-out><![CDATA[
+@Regression @SauceValidLogin @SmokeTest
+Scenario: Login Valid test                                          &amp#27;[90m# src/test/resources/features/SauceDemo.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the login page&amp#27;[0m                                      &amp#27;[90m# step_definitions.SauceDemoLogin.i_am_on_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m &amp#27;[90m# step_definitions.SauceDemoLogin.i_enter_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on the login button&amp#27;[0m                                   &amp#27;[90m# step_definitions.SauceDemoLogin.i_click_on_the_login_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should be in the home page&amp#27;[0m                                 &amp#27;[90m# step_definitions.SauceDemoLogin.i_should_be_in_the_home_page()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThere should be &amp#27;[0m&amp#27;[32m&amp#27;[1m6&amp#27;[0m&amp#27;[32m items in the home page&amp#27;[0m                      &amp#27;[90m# step_definitions.SauceDemoLogin.there_should_be_items_in_the_home_page(java.lang.Integer)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 19543
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 30, 2021 12:06:58 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Login Invalid test" classname="Sauce Demo login tests" time="16.71">
+    <system-out><![CDATA[
+@Regression @SauceInvalidLogin @SmokeTest
+Scenario: Login Invalid test                                                                                    &amp#27;[90m# src/test/resources/features/SauceDemo.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the login page&amp#27;[0m                                                                                  &amp#27;[90m# step_definitions.SauceDemoLogin.i_am_on_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_invalid"&amp#27;[0m                                           &amp#27;[90m# step_definitions.SauceDemoLogin.i_enter_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on the login button&amp#27;[0m                                                                               &amp#27;[90m# step_definitions.SauceDemoLogin.i_click_on_the_login_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should not be in the home page&amp#27;[0m                                                                         &amp#27;[90m# step_definitions.SauceDemoLogin.i_should_not_be_in_the_home_page()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThere should an error message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Epic sadface: Username and password do not match any user in this service"&amp#27;[0m &amp#27;[90m# step_definitions.SauceDemoLogin.there_should_an_error_message(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 43792
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 30, 2021 12:07:10 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I should be able to log my trade #1" classname="Add Trade" time="4.746">
+    <error message="null value in entry: url=null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: null value in entry: url=null
+]]></error>
+    <system-out><![CDATA[
+@Regression @addTrade @SmokeTest
+Scenario: As a user, I should be able to log my trade                                                                               &amp#27;[90m# src/test/resources/features/TradeAppAddTrade.feature:7&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the app log in page&amp#27;[0m                                                                                                 &amp#27;[90m# step_definitions.TradeAppAddTrade.i_am_on_the_app_log_in_page()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at step_definitions.TradeAppAddTrade.i_am_on_the_app_log_in_page(TradeAppAddTrade.java:31)
+	at âœ½.I am on the app log in page(file:///C:/Users/elysi/git/seleniumCucumberProject/./src/test/resources/features/TradeAppAddTrade.feature:8)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter valid username &amp#27;[0m&amp#27;[36m&amp#27;[1m"helil"&amp#27;[0m&amp#27;[36m and password &amp#27;[0m&amp#27;[36m&amp#27;[1m"SuperHelil123!"&amp#27;[0m                                                                 &amp#27;[90m# step_definitions.TradeAppAddTrade.i_enter_valid_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on trade signin button&amp#27;[0m                                                                                                &amp#27;[90m# step_definitions.TradeAppAddTrade.i_click_on_trade_signin_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be in the trade homepage&amp#27;[0m                                                                                            &amp#27;[90m# step_definitions.TradeAppAddTrade.i_should_be_in_the_trade_homepage()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on Add Trade button&amp#27;[0m                                                                                                  &amp#27;[90m# step_definitions.TradeAppAddTrade.i_click_on_add_trade_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be on Save Trade Form&amp#27;[0m                                                                                               &amp#27;[90m# step_definitions.TradeAppAddTrade.i_should_be_on_save_trade_form()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI select &amp#27;[0m&amp#27;[36m&amp#27;[1m"Buy to Open"&amp#27;[0m&amp#27;[36m and enter symble &amp#27;[0m&amp#27;[36m&amp#27;[1m"TSLA"&amp#27;[0m&amp#27;[36m entrydate &amp#27;[0m&amp#27;[36m&amp#27;[1m"06/01/2021"&amp#27;[0m&amp#27;[36m entryprice &amp#27;[0m&amp#27;[36m&amp#27;[1m"590"&amp#27;[0m&amp#27;[36m exitdate &amp#27;[0m&amp#27;[36m&amp#27;[1m"06/10/2021"&amp#27;[0m&amp#27;[36m exitprice &amp#27;[0m&amp#27;[36m&amp#27;[1m"600"&amp#27;[0m &amp#27;[90m# step_definitions.TradeAppAddTrade.i_select_and_enter_symble_entrydate_entryprice_exitdate_exitprice(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click save button&amp#27;[0m                                                                                                           &amp#27;[90m# step_definitions.TradeAppAddTrade.i_click_save_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe trade is displayed in the trade table&amp#27;[0m                                                                                    &amp#27;[90m# step_definitions.TradeAppAddTrade.the_trade_is_displayed_in_the_trade_table()&amp#27;[0m
+
+    Embedding screenshot [image/png 6115 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 1911
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 30, 2021 12:07:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I should be able to log my trade #2" classname="Add Trade" time="3.577">
+    <error message="null value in entry: url=null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: null value in entry: url=null
+]]></error>
+    <system-out><![CDATA[
+@Regression @addTradeWithDatatable @SmokeTest
+Scenario: As a user, I should be able to log my trade               &amp#27;[90m# src/test/resources/features/TradeAppAddTrade.feature:23&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the app log in page&amp#27;[0m                                 &amp#27;[90m# step_definitions.TradeAppAddTrade.i_am_on_the_app_log_in_page()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at step_definitions.TradeAppAddTrade.i_am_on_the_app_log_in_page(TradeAppAddTrade.java:31)
+	at âœ½.I am on the app log in page(file:///C:/Users/elysi/git/seleniumCucumberProject/./src/test/resources/features/TradeAppAddTrade.feature:24)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter valid username &amp#27;[0m&amp#27;[36m&amp#27;[1m"helil"&amp#27;[0m&amp#27;[36m and password &amp#27;[0m&amp#27;[36m&amp#27;[1m"SuperHelil123!"&amp#27;[0m &amp#27;[90m# step_definitions.TradeAppAddTrade.i_enter_valid_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on trade signin button&amp#27;[0m                                &amp#27;[90m# step_definitions.TradeAppAddTrade.i_click_on_trade_signin_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be in the trade homepage&amp#27;[0m                            &amp#27;[90m# step_definitions.TradeAppAddTrade.i_should_be_in_the_trade_homepage()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on Add Trade button&amp#27;[0m                                  &amp#27;[90m# step_definitions.TradeAppAddTrade.i_click_on_add_trade_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be on Save Trade Form&amp#27;[0m                               &amp#27;[90m# step_definitions.TradeAppAddTrade.i_should_be_on_save_trade_form()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter following trade details&amp#27;[0m                              &amp#27;[90m# step_definitions.TradeAppAddTrade.i_enter_following_trade_details(io.cucumber.datatable.DataTable)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click save button&amp#27;[0m                                           &amp#27;[90m# step_definitions.TradeAppAddTrade.i_click_save_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe trade is displayed in the trade table&amp#27;[0m                    &amp#27;[90m# step_definitions.TradeAppAddTrade.the_trade_is_displayed_in_the_trade_table()&amp#27;[0m
+
+    Embedding screenshot [image/png 6115 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 19520
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 30, 2021 12:07:31 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I should be able to add my trade and validate database" classname="Add Trade" time="3.212">
+    <error message="null value in entry: url=null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: null value in entry: url=null
+]]></error>
+    <system-out><![CDATA[
+@Regression @addTradeAndDatabase
+Scenario: As a user, I should be able to add my trade and validate database &amp#27;[90m# src/test/resources/features/TradeAppAddTrade.feature:36&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on the app log in page&amp#27;[0m                                         &amp#27;[90m# step_definitions.TradeAppAddTrade.i_am_on_the_app_log_in_page()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at step_definitions.TradeAppAddTrade.i_am_on_the_app_log_in_page(TradeAppAddTrade.java:31)
+	at âœ½.I am on the app log in page(file:///C:/Users/elysi/git/seleniumCucumberProject/./src/test/resources/features/TradeAppAddTrade.feature:37)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter valid username &amp#27;[0m&amp#27;[36m&amp#27;[1m"helil"&amp#27;[0m&amp#27;[36m and password &amp#27;[0m&amp#27;[36m&amp#27;[1m"SuperHelil123!"&amp#27;[0m         &amp#27;[90m# step_definitions.TradeAppAddTrade.i_enter_valid_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on trade signin button&amp#27;[0m                                        &amp#27;[90m# step_definitions.TradeAppAddTrade.i_click_on_trade_signin_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be in the trade homepage&amp#27;[0m                                    &amp#27;[90m# step_definitions.TradeAppAddTrade.i_should_be_in_the_trade_homepage()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on Add Trade button&amp#27;[0m                                          &amp#27;[90m# step_definitions.TradeAppAddTrade.i_click_on_add_trade_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be on Save Trade Form&amp#27;[0m                                       &amp#27;[90m# step_definitions.TradeAppAddTrade.i_should_be_on_save_trade_form()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter following trade details&amp#27;[0m                                      &amp#27;[90m# step_definitions.TradeAppAddTrade.i_enter_following_trade_details(io.cucumber.datatable.DataTable)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click save button&amp#27;[0m                                                   &amp#27;[90m# step_definitions.TradeAppAddTrade.i_click_save_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe trade input matches with the database record&amp#27;[0m                     &amp#27;[90m# step_definitions.TradeAppAddTrade.the_trade_input_matches_with_the_database_record()&amp#27;[0m
+
+    Embedding screenshot [image/png 6115 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 6759
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 30, 2021 12:07:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I should be able to see the record inserted to database" classname="Add Trade" time="10.481">
+    <error message="null value in entry: url=null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: null value in entry: url=null
+]]></error>
+    <system-out><![CDATA[
+@Regression @databaseInsertToUI
+Scenario: As a user, I should be able to see the record inserted to database &amp#27;[90m# src/test/resources/features/TradeAppAddTrade.feature:49&amp#27;[0m
+Insert query is: INSERT INTO records VALUES('205','1','0','SPCE','2021-03-10','3401.05','2021-06-5','3122.05','12.5')
+DB connection established.
+DB connection Not established.
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI insert the following record to database&amp#27;[0m                            &amp#27;[90m# step_definitions.TradeAppAddTrade.i_insert_the_following_record_to_database(io.cucumber.datatable.DataTable)&amp#27;[0m
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mI am on the app log in page&amp#27;[0m                                            &amp#27;[90m# step_definitions.TradeAppAddTrade.i_am_on_the_app_log_in_page()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at step_definitions.TradeAppAddTrade.i_am_on_the_app_log_in_page(TradeAppAddTrade.java:31)
+	at âœ½.I am on the app log in page(file:///C:/Users/elysi/git/seleniumCucumberProject/./src/test/resources/features/TradeAppAddTrade.feature:52)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI enter valid username &amp#27;[0m&amp#27;[36m&amp#27;[1m"helil"&amp#27;[0m&amp#27;[36m and password &amp#27;[0m&amp#27;[36m&amp#27;[1m"SuperHelil123!"&amp#27;[0m          &amp#27;[90m# step_definitions.TradeAppAddTrade.i_enter_valid_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on trade signin button&amp#27;[0m                                         &amp#27;[90m# step_definitions.TradeAppAddTrade.i_click_on_trade_signin_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be in the trade homepage&amp#27;[0m                                     &amp#27;[90m# step_definitions.TradeAppAddTrade.i_should_be_in_the_trade_homepage()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe trade input displays on UI&amp#27;[0m                                         &amp#27;[90m# step_definitions.TradeAppAddTrade.the_trade_input_displays_on_ui()&amp#27;[0m
+
+    Embedding screenshot [image/png 6115 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 45204
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 30, 2021 12:07:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '205' for key 'records.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1333)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2106)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1243)
+	at utilities.DBUtils.insertRecord(DBUtils.java:64)
+	at step_definitions.TradeAppAddTrade.i_insert_the_following_record_to_database(TradeAppAddTrade.java:159)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I should be directed to login page on click of the sign in button" classname="Amazon login" time="15.744">
+    <system-out><![CDATA[
+@Regression @loginValidTest @SmokeTest
+Scenario: As a user, I should be directed to login page on click of the sign in button &amp#27;[90m# src/test/resources/features/amazonLogin.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the amazon homepage&amp#27;[0m                                                    &amp#27;[90m# step_definitions.AmazonLogin.i_am_on_the_amazon_homepage()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mSign in button is displayed&amp#27;[0m                                                     &amp#27;[90m# step_definitions.AmazonLogin.sign_in_button_is_displayed()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click on signin button&amp#27;[0m                                                        &amp#27;[90m# step_definitions.AmazonLogin.i_click_on_signin_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should be directed to login page&amp#27;[0m                                              &amp#27;[90m# step_definitions.AmazonLogin.i_should_be_directed_to_login_page()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 19078
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 30, 2021 12:07:48 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I should not be directed to password field when I provide invalid user email" classname="Amazon login" time="25.363">
+    <system-out><![CDATA[
+@Regression @loginInvalidTest @SmokeTest
+Scenario: As a user, I should not be directed to password field when I provide invalid user email &amp#27;[90m# src/test/resources/features/amazonLogin.feature:13&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the amazon signin page&amp#27;[0m                                                            &amp#27;[90m# step_definitions.AmazonLogin.i_am_on_the_amazon_signin_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter invalid user email &amp#27;[0m&amp#27;[32m&amp#27;[1m"jon.dow@gmail.com"&amp#27;[0m                                             &amp#27;[90m# step_definitions.AmazonLogin.i_enter_invalid_user_email(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI clicked on continue button&amp#27;[0m                                                                &amp#27;[90m# step_definitions.AmazonLogin.i_clicked_on_continue_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAn error message &amp#27;[0m&amp#27;[32m&amp#27;[1m"There was a problem"&amp#27;[0m&amp#27;[32m should display&amp#27;[0m                                      &amp#27;[90m# step_definitions.AmazonLogin.an_error_message_should_display(java.lang.String)&amp#27;[0m
+  &amp#27;[32mBut &amp#27;[0m&amp#27;[32mThe password field should not display&amp#27;[0m                                                       &amp#27;[90m# step_definitions.AmazonLogin.the_password_field_should_not_display()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 5765
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 30, 2021 12:08:03 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I should be able to search different items #1" classname="Amazon login" time="16.938">
+    <system-out><![CDATA[
+@Regression @SearchTest @SmokeTest
+Scenario Outline: As a user, I should be able to search different items &amp#27;[90m# src/test/resources/features/amazonLogin.feature:36&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the amazon homepage&amp#27;[0m                                     &amp#27;[90m# step_definitions.AmazonLogin.i_am_on_the_amazon_homepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter the search term &amp#27;[0m&amp#27;[32m&amp#27;[1m"coffee mug"&amp#27;[0m                             &amp#27;[90m# step_definitions.AmazonLogin.i_enter_the_search_term(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on search button&amp#27;[0m                                          &amp#27;[90m# step_definitions.AmazonLogin.i_click_on_search_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see the search item &amp#27;[0m&amp#27;[32m&amp#27;[1m"coffee mug"&amp#27;[0m&amp#27;[32m on search result page&amp#27;[0m  &amp#27;[90m# step_definitions.AmazonLogin.i_should_see_the_search_item_on_search_result_page(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 24594
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 30, 2021 12:08:29 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I should be able to search different items #2" classname="Amazon login" time="18.496">
+    <system-out><![CDATA[
+@Regression @SearchTest @SmokeTest
+Scenario Outline: As a user, I should be able to search different items       &amp#27;[90m# src/test/resources/features/amazonLogin.feature:37&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the amazon homepage&amp#27;[0m                                           &amp#27;[90m# step_definitions.AmazonLogin.i_am_on_the_amazon_homepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter the search term &amp#27;[0m&amp#27;[32m&amp#27;[1m"pretty coffee mug"&amp#27;[0m                            &amp#27;[90m# step_definitions.AmazonLogin.i_enter_the_search_term(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on search button&amp#27;[0m                                                &amp#27;[90m# step_definitions.AmazonLogin.i_click_on_search_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see the search item &amp#27;[0m&amp#27;[32m&amp#27;[1m"pretty coffee mug"&amp#27;[0m&amp#27;[32m on search result page&amp#27;[0m &amp#27;[90m# step_definitions.AmazonLogin.i_should_see_the_search_item_on_search_result_page(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 13869
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 30, 2021 12:08:46 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I should be able to search different items #3" classname="Amazon login" time="16.542">
+    <system-out><![CDATA[
+@Regression @SearchTest @SmokeTest
+Scenario Outline: As a user, I should be able to search different items     &amp#27;[90m# src/test/resources/features/amazonLogin.feature:38&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the amazon homepage&amp#27;[0m                                         &amp#27;[90m# step_definitions.AmazonLogin.i_am_on_the_amazon_homepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter the search term &amp#27;[0m&amp#27;[32m&amp#27;[1m"cool coffee mug"&amp#27;[0m                            &amp#27;[90m# step_definitions.AmazonLogin.i_enter_the_search_term(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on search button&amp#27;[0m                                              &amp#27;[90m# step_definitions.AmazonLogin.i_click_on_search_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see the search item &amp#27;[0m&amp#27;[32m&amp#27;[1m"cool coffee mug"&amp#27;[0m&amp#27;[32m on search result page&amp#27;[0m &amp#27;[90m# step_definitions.AmazonLogin.i_should_see_the_search_item_on_search_result_page(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 19009
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 30, 2021 12:09:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I should be able to search different items #4" classname="Amazon login" time="13.618">
+    <system-out><![CDATA[
+@Regression @SearchTest @SmokeTest
+Scenario Outline: As a user, I should be able to search different items     &amp#27;[90m# src/test/resources/features/amazonLogin.feature:39&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the amazon homepage&amp#27;[0m                                         &amp#27;[90m# step_definitions.AmazonLogin.i_am_on_the_amazon_homepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter the search term &amp#27;[0m&amp#27;[32m&amp#27;[1m"ugly coffee mug"&amp#27;[0m                            &amp#27;[90m# step_definitions.AmazonLogin.i_enter_the_search_term(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on search button&amp#27;[0m                                              &amp#27;[90m# step_definitions.AmazonLogin.i_click_on_search_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see the search item &amp#27;[0m&amp#27;[32m&amp#27;[1m"ugly coffee mug"&amp#27;[0m&amp#27;[32m on search result page&amp#27;[0m &amp#27;[90m# step_definitions.AmazonLogin.i_should_see_the_search_item_on_search_result_page(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 42504
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 30, 2021 12:09:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="As a user, I should be able to search different items #5" classname="Amazon login" time="16.48">
+    <system-out><![CDATA[
+@Regression @SearchTest @SmokeTest
+Scenario Outline: As a user, I should be able to search different items     &amp#27;[90m# src/test/resources/features/amazonLogin.feature:40&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the amazon homepage&amp#27;[0m                                         &amp#27;[90m# step_definitions.AmazonLogin.i_am_on_the_amazon_homepage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter the search term &amp#27;[0m&amp#27;[32m&amp#27;[1m"cute coffee mug"&amp#27;[0m                            &amp#27;[90m# step_definitions.AmazonLogin.i_enter_the_search_term(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on search button&amp#27;[0m                                              &amp#27;[90m# step_definitions.AmazonLogin.i_click_on_search_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see the search item &amp#27;[0m&amp#27;[32m&amp#27;[1m"cute coffee mug"&amp#27;[0m&amp#27;[32m on search result page&amp#27;[0m &amp#27;[90m# step_definitions.AmazonLogin.i_should_see_the_search_item_on_search_result_page(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 30061
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 30, 2021 12:09:35 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

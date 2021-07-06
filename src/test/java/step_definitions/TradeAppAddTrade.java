@@ -67,7 +67,7 @@ public class TradeAppAddTrade {
 		
 		inputSymbol = symbol;
 		
-	   utils.selectByVisibleText(tradepage.buyOrSellDropdown, buyToOpen);
+	   BrowserUtils.selectByVisibleText(tradepage.buyOrSellDropdown, buyToOpen);
 	   tradepage.tradeSymbol.sendKeys(symbol);
 	   tradepage.entryDate.sendKeys(entryDate);
 	   tradepage.entryPrice.sendKeys(entryPrice);
@@ -105,7 +105,7 @@ public class TradeAppAddTrade {
 		inputEntryPrice = list.get(3);
 		inputExitPrice = list.get(5);
 		
-		   utils.selectByVisibleText(tradepage.buyOrSellDropdown, list.get(0));
+		   BrowserUtils.selectByVisibleText(tradepage.buyOrSellDropdown, list.get(0));
 		   tradepage.tradeSymbol.sendKeys(list.get(1));
 		   tradepage.entryDate.sendKeys(list.get(2));
 		   tradepage.entryPrice.sendKeys(list.get(3));

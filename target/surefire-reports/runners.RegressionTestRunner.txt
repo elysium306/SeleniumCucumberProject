@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: runners.RegressionTestRunner
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 212.834 s <<< FAILURE! - in runners.RegressionTestRunner
+Add Trade.As a user, I should be able to log my trade #1  Time elapsed: 4.746 s  <<< ERROR!
+java.lang.NullPointerException: null value in entry: url=null
+
+Add Trade.As a user, I should be able to log my trade #2  Time elapsed: 3.577 s  <<< ERROR!
+java.lang.NullPointerException: null value in entry: url=null
+
+Add Trade.As a user, I should be able to add my trade and validate database  Time elapsed: 3.212 s  <<< ERROR!
+java.lang.NullPointerException: null value in entry: url=null
+
+Add Trade.As a user, I should be able to see the record inserted to database  Time elapsed: 10.481 s  <<< ERROR!
+java.lang.NullPointerException: null value in entry: url=null
+
