@@ -43,13 +43,13 @@ public class Driver {
 			case "chrome":
 				ChromeDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
-		        break;
+				break;
 			case "headless":
 			default:
 				ChromeDriverManager.chromedriver().setup();
 				ChromeOptions options = new ChromeOptions();
-		        options.addArguments("--headless");
-		        driver = new ChromeDriver(options);
+				options.addArguments("--headless");
+				driver = new ChromeDriver(options);
 			}
 		}
 		return driver;
