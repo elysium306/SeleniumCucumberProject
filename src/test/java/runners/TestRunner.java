@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		features="./src/test/resources/features",
 		glue="step_definitions",
 		dryRun=false,
-		tags="@loginValidTest",
+		tags="@FindByStatus",
 		publish=true
 		)
 public class TestRunner {
