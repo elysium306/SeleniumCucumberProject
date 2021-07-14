@@ -2,6 +2,8 @@ package apt_tests;
 
 import static org.testng.Assert.assertEquals;
 
+import java.io.File;
+import java.net.Authenticator.RequestorType;
 import java.util.Iterator;
 import java.util.List;
 
@@ -10,6 +12,9 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import okhttp3.RequestBody;
+
+import static org.hamcrest.Matchers.*;
 
 public class PetStoreTest {
 	String url = "https://petstore.swagger.io/v2/pet/findBy";
@@ -78,19 +83,38 @@ public class PetStoreTest {
 	  assertEquals(tagsName, "booboodc");
 	  
 	  List<String> list = response.jsonPath().getList("tags");
+	  for (Iterator iterator = list.iterator(); iterator.hasNext();) {
+		String string = (String) iterator.next();
+		
+	}
 	  
   }
   
-  @Test
-  public void findByInvalidID() {
+	  // invalid ID test
 	  
-	  url = "";
-	  int invalidID = 2792200;
+	  @Test
+	  public void findByInvalidID() {
+		  
+		  url = "https://petstore.swagger.io/v2/pet";
+		  File requestBody = new File("./src/test/resources/JSONFile/putRequest.json");
+		  int invalidID = 2792200;
+		  
+		  response = given().accept(ContentType.JSON).when().get(url + invalidID);  //.accept(ContentType.JSON).when().get(url + invalidID);
+		  int tagsID = response.path("tags[0].id");
+		  String tagsName = response.path("tags[0].name");
+		  
+		  given().contentType("application/json").accept(ContentType.JSON)
+		  .body(requestBody).when().post(url).thenReturn();
+		
+	  }
 	  
-	  response = given().accept(ContentType.JSON).when().get(url + invalidID);  //.accept(ContentType.JSON).when().get(url + invalidID);
-	  int tagsID = response.path("tags[0].id");
-	  String tagsName = response.path("tags[0].name");
+	  // delete pet by id
 	  
-	  
-  }
+	  @Test
+	  public void deletePet() {
+		  url = "https://petstore.swagger.io/v2/pet/";
+		  given()
+		  .when()
+		  .delete(url + "9");
+	  }
 }
