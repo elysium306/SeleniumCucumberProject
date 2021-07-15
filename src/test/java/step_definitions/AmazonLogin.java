@@ -16,9 +16,9 @@ public class AmazonLogin {
 	BrowserUtils utils = new BrowserUtils();
 	AmazonPage amazonpage = new AmazonPage();
 	
-	
+	// login with valid username and password
 	@Given("I am on the amazon homepage")
-	public void i_am_on_the_amazon_homepage() {
+	public void I_am_on_the_amazon_homepage() {
 	    Driver.getDriver().get(PropertiesReader.getProperty("amazonURL"));
 	}
 

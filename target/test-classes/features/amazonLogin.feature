@@ -17,30 +17,21 @@ Feature: Amazon login
     Then An error message "There was a problem" should display
     But The password field should not display
 
-    #if you put a tag on top of the Feature,
-    #when you run using that tag, it will run everything inside the feature
-    
-    
-    #if you have a tag on top on a scenario,  and when you run using that tag, 
-    #only the scenarios tagged with will run. 
-    
-    @SearchTest @SmokeTest
-    Scenario Outline: As a user, I should be able to search different items
+  #if you put a tag on top of the Feature,
+  #when you run using that tag, it will run everything inside the feature
+  #if you have a tag on top on a scenario,  and when you run using that tag,
+  #only the scenarios tagged with will run.
+  @SearchTest @SmokeTest @AmazonTest
+  Scenario Outline: As a user, I should be able to search different items
     Given I am on the amazon homepage
     When I enter the search term "<items>"
     And I click on search button
     Then I should see the search item "<items>" on search result page
-    
+
     Examples: 
-    |items|
-    |coffee mug|
-    |pretty coffee mug|
-    |cool coffee mug|
-    |ugly coffee mug|
-    |cute coffee mug|
-    
-    
-    
-    
-    
-    
+      | items             |
+      | coffee mug        |
+      | pretty coffee mug |
+      | cool coffee mug   |
+      | ugly coffee mug   |
+      | cute coffee mug   |

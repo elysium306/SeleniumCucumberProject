@@ -61,7 +61,7 @@ public class Driver {
 		return driver;
 	}
 	
-	// Saucelab configs
+	// Saucelab config
 	public static void sauceLabsSetup() {
 		MutableCapabilities sauceOptions = new MutableCapabilities();
 
