@@ -1,9 +1,9 @@
-@Regression
+@Regression 
 Feature: Add Trade
   User is able to add delete edit the trade logs
   
   
-  @addTrade @SmokeTest
+  @addTrade @SmokeTest @UpdateTrade
   Scenario: As a user, I should be able to log my trade
     Given I am on the app log in page
     When I enter valid username "helil" and password "SuperHelil123!"
@@ -19,7 +19,7 @@ Feature: Add Trade
     # we are going to create couple different scenarios to understand the difference between
     # the cucumber data tables with data passing in the steps
     
-    @addTradeWithDatatable @SmokeTest
+    @addTradeWithDatatable @SmokeTest @UpdateTrade
   Scenario: As a user, I should be able to log my trade
     Given I am on the app log in page
     When I enter valid username "helil" and password "SuperHelil123!"
@@ -32,7 +32,7 @@ Feature: Add Trade
     And I click save button 
     Then the trade is displayed in the trade table
     
-    @addTradeAndDatabase
+    @addTradeAndDatabase 
     Scenario: As a user, I should be able to add my trade and validate database
     Given I am on the app log in page
     When I enter valid username "helil" and password "SuperHelil123!"

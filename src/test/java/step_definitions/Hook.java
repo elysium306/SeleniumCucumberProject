@@ -9,13 +9,15 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import utilities.Driver;
+import utilities.PropertiesReader;
 
 public class Hook {
 	
 	@Before
 	public void setUp() {
-		Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		//Driver.getDriver().manage().window().maximize();
+        Driver.getDriver().get(PropertiesReader.getProperty("url"));
+        Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        Driver.getDriver().manage().window().maximize();
 	}
 	
 	@After
