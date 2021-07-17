@@ -2,7 +2,7 @@
 Feature: Amazon login
   User should be able to login and logout using Amazon login feature
 
-  @loginValidTest @SmokeTest
+  @loginValidTest @SmokeTest @AmazonTest
   Scenario: As a user, I should be directed to login page on click of the sign in button
     Given I am on the amazon homepage
     Then Sign in button is displayed

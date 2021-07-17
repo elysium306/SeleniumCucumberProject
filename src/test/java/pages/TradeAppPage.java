@@ -58,5 +58,4 @@ public class TradeAppPage {
 	
 	@FindBy (xpath="//table[@class='table table-bordered table-striped']/tbody/tr/td")
 	public List<WebElement> searchTableFirstRow;
-
 }

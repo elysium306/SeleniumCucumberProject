@@ -27,7 +27,7 @@ public class TradeAppAddTrade {
 	String inputExitPrice;
 	
 	@Given("I am on the app log in page")
-	public void i_am_on_the_app_log_in_page() {
+	public void I_am_on_the_app_log_in_page() {
 	    Driver.getDriver().get(PropertiesReader.getProperty("tradeAppUrl"));
 	    utils.waitUntilElementVisible(tradepage.username);
 	    Assert.assertTrue(tradepage.username.isDisplayed());

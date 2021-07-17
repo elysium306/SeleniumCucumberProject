@@ -19,11 +19,6 @@ public class SelectCalendarByJS {
 		
 		driver.getDriver().manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
-		
-		
-		
-		
 	}
 
 }
