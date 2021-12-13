@@ -1,0 +1,22 @@
+{
+    "id": 330000,
+    "category": {
+        "id": 2,
+        "name": "doggie"
+    },
+    "name": "booboo",
+    "photoUrls": [
+        "www.google.com"
+    ],
+    "tags": [
+        {
+            "id": 12,
+            "name": "bobo"
+        },
+        {
+            "id": 4,
+            "name": "DMV"
+        }
+    ],
+    "status": "available"
+}
