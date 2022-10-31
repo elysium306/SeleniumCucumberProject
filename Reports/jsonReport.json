@@ -1,0 +1,90 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-06T06:25:09.322Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1113942934,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Find a pet by status available",
+        "description": "",
+        "id": "pet-store;find-a-pet-by-status-available",
+        "after": [
+          {
+            "result": {
+              "duration": 67670398,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "valid endpoint exist",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 471593,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I send a GET request by status \"available\" to valid endpoint",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 878375,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Response status code should be 200",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 229314,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Content type should be \"application/json\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FindByStatus"
+          }
+        ]
+      }
+    ],
+    "name": "Pet store",
+    "description": "",
+    "id": "pet-store",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PetStore.feature",
+    "tags": []
+  }
+]
