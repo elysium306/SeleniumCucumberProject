@@ -27,7 +27,7 @@ public class PetStore {
 	@Then("Response status code should be {int}")
 	public void response_status_code_should_be(Integer int1) {
 
-		// validing the response using RestAssured build it validation
+		// validating the response using RestAssured build it validation
 		response.then().statusCode(200);
 	}
 	@Then("Content type should be {string}")
