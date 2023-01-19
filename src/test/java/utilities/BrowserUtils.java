@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class BrowserUtils {
 
 	Alert alert;
@@ -37,12 +39,12 @@ public class BrowserUtils {
 	}
 
 	public void waitUntilAlertIsPresent() {
-		letswait = new WebDriverWait(Driver.getDriver(), 10);
+		letswait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 		letswait.until(ExpectedConditions.alertIsPresent());
 	}
 
 	public void waitUntilElementVisible(WebElement element) {
-		letswait = new WebDriverWait(Driver.getDriver(), 10);
+		letswait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 		letswait.until(ExpectedConditions.visibilityOf(element));
 	}
 
@@ -60,7 +62,7 @@ public class BrowserUtils {
 		return true;
 	}
 
-	// hoverover to an element
+	// hover over to an element
 	public void hoverOverToElement(WebElement element) {
 		act = new Actions(Driver.getDriver());
 		act.moveToElement(element).perform();
@@ -73,7 +75,7 @@ public class BrowserUtils {
 	}
 
 	// this method is for deleting the pre-populated value of an input field with
-	// back space key events
+	// backspace key events
 	public void clearValueOnTheField(WebElement element) {
 		String temp = element.getAttribute("value");
 		for (int i = 0; i < temp.length(); i++) {
