@@ -13,7 +13,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 public class Driver {
 	
-	/* Driver class is reusable class for webDriver and it checks the webDriver on the system.
+	/* Driver class is reusable class for webDriver, and it checks the webDriver on the system.
 	 * If there isn't any driver on the system, it downloads the driver and sets up the path and environment  
 	 * For this purpose, I've used WebDriver manager
 	 * And if I want to run my script on different browser, 

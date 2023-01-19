@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 
 public class JavaScriptUtils {
 	
-	JavascriptExecutor js = (JavascriptExecutor)Driver.getDriver();
+	JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
 	
 	
 	// scrolls down to an element given
