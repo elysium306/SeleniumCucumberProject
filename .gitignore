@@ -36,6 +36,7 @@ local.properties
 .loadpath
 .factorypath
 /src/main/resources/rebel.xml
+.settings/org.eclipse.jdt.core.prefs
 
 # External tool builders
 .externalToolBuilders/**
