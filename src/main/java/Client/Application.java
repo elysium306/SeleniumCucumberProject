@@ -26,7 +26,9 @@ public class Application {
         });
 
         inventoryTask.start();
-        Thread.sleep(2000);
+        Thread.sleep(2000); // just so that there will be some products populated before iteration begins
+//        inventoryTask.join(); [Step 2] However,this is not the way to go
+//        Thread.sleep(2000); // TODO: this is old traditional way to do it [Step 1]
         displayTask.start();
 
     }

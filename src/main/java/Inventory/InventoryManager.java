@@ -1,13 +1,15 @@
 package Inventory;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class InventoryManager {
 
-    List<Product> soldProductsList = new ArrayList<>();
-    List<Product> purchasedProductList = new ArrayList<>();
-
+//    List<Product> soldProductsList = new ArrayList<>();
+    List<Product> soldProductsList = new CopyOnWriteArrayList<>();
+    // TODO: instead of this, we can use Vector, or CopyOnWriteArrayList
+//    List<Product> purchasedProductList = new ArrayList<>();
+    List<Product> purchasedProductList = new CopyOnWriteArrayList<>();
     public void populateSoldProducts(){
         for(int i = 0; i < 1000; i++) {
             Product prod = new Product(i, "test-product_" + i);
