@@ -141,4 +141,27 @@ Desktop.ini
 ######################
 .eslintcache
 /.idea/
+HELP.md
+target/
 
+### STS ###
+.apt_generated
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+.idea/misc.xml
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###

@@ -7,15 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mssc-brewery" />
         <module name="SeleniumCucumberProject" />
       </profile>
     </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="SeleniumCucumberProject" options="" />
-      <module name="mssc-brewery" options="-parameters" />
-    </option>
+    <bytecodeTargetLevel>
+      <module name="SeleniumCucumberProject" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

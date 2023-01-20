@@ -38,7 +38,6 @@ public class AmazonLogin {
 	    Assert.assertTrue(amazonpage.signInText.isDisplayed());
 	}
 	
-	
 	// the amazon invalid email test 
 	
 	@Given("I am on the amazon signin page")
@@ -70,8 +69,6 @@ public class AmazonLogin {
 	public void the_password_field_should_not_display() {
 	    Assert.assertFalse(utils.isElementPresent(amazonpage.signInPasswordField));
 	}
-
-	
 	// amazon search tests 
 	
 	@When("I enter the search term {string}")
@@ -90,6 +87,4 @@ public class AmazonLogin {
 	   
 	   Assert.assertEquals(actualResultText, item);
 	}
-	
-
 }
