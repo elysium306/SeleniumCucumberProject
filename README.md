@@ -5,10 +5,25 @@
   - Feature File
     - This file has .feature extension. i.e. <Login.feature>
     - for each feature, there will be one feature file
+      - Given, When, Then ...
+
+          -- dependencies: 
+            - Cucumber Java
+            - Cucumber-JVM
+            - Cucumber-junit
+            - Cucumber-jvm-deps
+            - Cucumber-reporting
+            - Gherkins
+            - Cucumber-picocontainers 
 
   - Step Definitions
     - this portion has all the test codes
-  - Test Runner
+    - this is where Selenium + Java + Cucumber annotations are defined
+
+
+  - Test Runner :: this will execute the Test Case
+  - JUnit, Reports, Output ...
+  - 
 
 
 
