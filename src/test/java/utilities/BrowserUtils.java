@@ -1,5 +1,7 @@
 package utilities;
 
+import java.time.Duration;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -37,12 +39,12 @@ public class BrowserUtils {
 	}
 
 	public void waitUntilAlertIsPresent() {
-		letswait = new WebDriverWait(Driver.getDriver(), 10);
+		letswait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 		letswait.until(ExpectedConditions.alertIsPresent());
 	}
 
 	public void waitUntilElementVisible(WebElement element) {
-		letswait = new WebDriverWait(Driver.getDriver(), 10);
+		letswait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 		letswait.until(ExpectedConditions.visibilityOf(element));
 	}
 
@@ -60,7 +62,7 @@ public class BrowserUtils {
 		return true;
 	}
 
-	// hoverover to an element
+	// hover over to an element
 	public void hoverOverToElement(WebElement element) {
 		act = new Actions(Driver.getDriver());
 		act.moveToElement(element).perform();
@@ -89,7 +91,7 @@ public class BrowserUtils {
 	}
 
 	// this method is for deleting the pre-populated value of an input field with
-	// command + a keys event for mac
+	// command + a keys event for Mac
 	public void clearTextOfAField(WebElement element) {
 		element.sendKeys(Keys.chord(Keys.COMMAND), "a");
 		element.sendKeys(Keys.DELETE);
