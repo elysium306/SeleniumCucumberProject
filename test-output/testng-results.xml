@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-07T21:29:38 CST" name="Default suite" finished-at="2023-02-07T21:29:45 CST" duration-ms="6939">
+  <suite started-at="2023-02-22T00:23:37 CST" name="Default suite" finished-at="2023-02-22T00:23:53 CST" duration-ms="16024">
     <groups>
+      <group name="UI">
+        <method signature="Test2.test1()[pri:0, instance:package3.Test2@78b41097]" name="test1" class="package3.Test2"/>
+        <method signature="Test2.test2()[pri:0, instance:package3.Test2@78b41097]" name="test2" class="package3.Test2"/>
+        <method signature="Test2.test3()[pri:0, instance:package3.Test2@78b41097]" name="test3" class="package3.Test2"/>
+      </group> <!-- UI -->
+      <group name="JavaCore">
+        <method signature="Test2.test1()[pri:0, instance:package3.Test2@78b41097]" name="test1" class="package3.Test2"/>
+      </group> <!-- JavaCore -->
+      <group name="Selenium">
+        <method signature="Test2.test2()[pri:0, instance:package3.Test2@78b41097]" name="test2" class="package3.Test2"/>
+        <method signature="Test2.test3()[pri:0, instance:package3.Test2@78b41097]" name="test3" class="package3.Test2"/>
+      </group> <!-- Selenium -->
     </groups>
-    <test started-at="2023-02-07T21:29:38 CST" name="Default test" finished-at="2023-02-07T21:29:45 CST" duration-ms="6939">
+    <test started-at="2023-02-22T00:23:37 CST" name="Default test" finished-at="2023-02-22T00:23:53 CST" duration-ms="16024">
       <class name="package3.Test2">
-        <test-method signature="test1()[pri:0, instance:package3.Test2@3bb9a3ff]" started-at="2023-02-07T21:29:38 CST" name="test1" finished-at="2023-02-07T21:29:45 CST" duration-ms="6884" status="PASS">
+        <test-method signature="test1()[pri:0, instance:package3.Test2@78b41097]" started-at="2023-02-22T00:23:37 CST" name="test1" finished-at="2023-02-22T00:23:44 CST" duration-ms="6611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:package3.Test2@78b41097]" started-at="2023-02-22T00:23:44 CST" name="test2" finished-at="2023-02-22T00:23:51 CST" duration-ms="6864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:package3.Test2@78b41097]" started-at="2023-02-22T00:23:51 CST" name="test3" finished-at="2023-02-22T00:23:53 CST" duration-ms="2338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:package3.Test2@78b41097]" started-at="2023-02-22T00:23:53 CST" name="tearDown" finished-at="2023-02-22T00:23:53 CST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- package3.Test2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
