@@ -13,15 +13,17 @@ import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
 import io.github.bonigarcia.wdm.managers.InternetExplorerDriverManager;
 
 public class Driver {
-	
-	/* Driver class is reusable class for webDriver and it checks the webDriver on the system.
-	 * If there isn't any driver on the system, it downloads the driver and sets up the path and environment  
-	 * For this purpose, I've used WebDriver manager
-	 * And if I want to run my script on different browser, 
-	 * all I have to do is change the browser name in the properties file.
+
+	/*
+	 * Driver class is reusable class for webDriver and it checks the webDriver on
+	 * the system. If there isn't any driver on the system, it downloads the driver
+	 * and sets up the path and environment For this purpose, I've used WebDriver
+	 * manager And if I want to run my script on different browser, all I have to do
+	 * is change the browser name in the properties file.
 	 */
-	
+
 	private static WebDriver driver;
+
 	public static WebDriver getDriver() {
 		String browser = System.getProperty("browser");
 		if (browser == null) {
