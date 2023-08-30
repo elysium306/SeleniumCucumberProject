@@ -2,8 +2,10 @@ package package3;
 
 import java.util.Scanner;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -20,14 +22,21 @@ public class Test2 {
 	private static Scanner keyboard = new Scanner(System.in);
 	private static WebDriver firefox = new FirefoxDriver();
 	private static WebDriver chrome = new ChromeDriver();
+	private static WebDriver edge = new EdgeDriver();
 	
 	@Link(type = "Java Core")
 	@Description("Scanner take user input & compare the value test")
 	@Severity(SeverityLevel.NORMAL)
 	@Test(groups = {"UI", "JavaCore"}, singleThreaded = false, successPercentage = 100)
 	public static void test1() {
+		
+		Allure.step("Initializing the Edge driver");
+		edge.get("https://www.amazon.com");
+		edge.manage().window().maximize();
+		
 		Allure.step("Here it asks for a name");
-		System.out.println("Enter a name: ");
+		edge.findElement(By.cssSelector("input[placeholder=\"Search Amazon\"]")).sendKeys("selenium java books");
+		edge.findElement(By.id("nav-search-submit-button")).click();
 		String name = keyboard.nextLine();
 
 		Allure.step("Here it asks for a number");

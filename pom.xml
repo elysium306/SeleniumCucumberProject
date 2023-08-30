@@ -8,14 +8,14 @@
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<webdrivermanager>5.3.2</webdrivermanager>
-		<selenium-java>4.8.1</selenium-java>
-		<testng>7.7.1</testng>
+		<selenium-java>4.11.0</selenium-java>
+		<testng>7.8.0</testng>
 		<assertj-core>3.24.2</assertj-core>
 		<cucumber-java>6.10.4</cucumber-java>
 		<cucumber-junit>6.10.4</cucumber-junit>
 		<ojdbc8>21.1.0.0</ojdbc8>
 		<mysql-connector-java>8.0.25</mysql-connector-java>
-		<rest-assured>4.4.0</rest-assured>
+		<rest-assured>5.2.0</rest-assured>
 		<commons-io>2.11.0</commons-io>
 		<slf4j-reload4j>2.0.6</slf4j-reload4j>
 		<allure-testng>2.21.0</allure-testng>
