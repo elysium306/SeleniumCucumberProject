@@ -1,18 +1,13 @@
 package step_definitions;
 
+import io.cucumber.java.en.*;
 import org.junit.Assert;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.But;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import pages.AmazonPage;
-import utilities.BrowserUtils;
 import utilities.Driver;
 import utilities.PropertiesReader;
 
 public class AmazonLogin {
-	
+
 	BrowserUtils utils = new BrowserUtils();
 	AmazonPage amazonpage = new AmazonPage();
 	
