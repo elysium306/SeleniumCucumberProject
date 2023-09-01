@@ -19,10 +19,10 @@ import io.qameta.allure.SeverityLevel;
 
 public class Test2 {
 	
-	private static Scanner keyboard = new Scanner(System.in);
-	private static WebDriver firefox = new FirefoxDriver();
-	private static WebDriver chrome = new ChromeDriver();
-	private static WebDriver edge = new EdgeDriver();
+	private static final Scanner keyboard = new Scanner(System.in);
+	private static final WebDriver firefox = new FirefoxDriver();
+	private static final WebDriver chrome = new ChromeDriver();
+	private static final WebDriver edge = new EdgeDriver();
 	
 	@Link(type = "Java Core")
 	@Description("Scanner take user input & compare the value test")

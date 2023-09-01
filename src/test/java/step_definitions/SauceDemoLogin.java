@@ -38,7 +38,7 @@ public class SauceDemoLogin {
 	@And("There should be {int} items in the home page")
 	public void there_should_be_items_in_the_home_page(Integer int1) {
 		int actualSize = page.itemTitles.size();
-		Assert.assertTrue(actualSize == int1);
+        Assert.assertEquals(actualSize, (int) int1);
 	}
 	
 	// invalid test steps 

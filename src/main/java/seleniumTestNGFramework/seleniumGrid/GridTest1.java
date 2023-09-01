@@ -24,7 +24,7 @@ public class GridTest1 {
 			driver.get("http://www.google.com");
 			driver.manage().window().maximize();
 			
-			System.out.println("Chrome1 Title: " + driver.getTitle().toString());
+			System.out.println("Chrome1 Title: " + driver.getTitle());
 			driver.quit();
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -45,7 +45,7 @@ public class GridTest1 {
 			driver.get("http://www.amazon.com");
 			driver.manage().window().maximize();
 			
-			System.out.println("Chrome2 Title: " + driver.getTitle().toString());
+			System.out.println("Chrome2 Title: " + driver.getTitle());
 			driver.quit();
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -65,7 +65,7 @@ public class GridTest1 {
 			driver.get("http://www.yahoo.com");
 			driver.manage().window().maximize();
 			
-			System.out.println("Firefox1 Title: " + driver.getTitle().toString());
+			System.out.println("Firefox1 Title: " + driver.getTitle());
 			driver.quit();
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -85,7 +85,7 @@ public class GridTest1 {
 			driver.get("http://www.selenium.dev");
 			driver.manage().window().maximize();
 			
-			System.out.println("Firefox2 Title: " + driver.getTitle().toString());
+			System.out.println("Firefox2 Title: " + driver.getTitle());
 			driver.quit();
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
