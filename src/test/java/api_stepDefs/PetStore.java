@@ -1,12 +1,12 @@
 package api_stepDefs;
 
+import static io.restassured.RestAssured.given;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import static io.restassured.RestAssured.*;
-import static org.testng.Assert.assertEquals;
 
 public class PetStore {
 	

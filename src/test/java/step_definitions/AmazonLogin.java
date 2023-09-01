@@ -1,18 +1,13 @@
 package step_definitions;
 
+import io.cucumber.java.en.*;
 import org.junit.Assert;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.But;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import pages.AmazonPage;
-import utilities.BrowserUtils;
 import utilities.Driver;
 import utilities.PropertiesReader;
 
 public class AmazonLogin {
-	
+
 	BrowserUtils utils = new BrowserUtils();
 	AmazonPage amazonpage = new AmazonPage();
 	
@@ -37,7 +32,6 @@ public class AmazonLogin {
 	    utils.waitUntilElementVisible(amazonpage.signInText);
 	    Assert.assertTrue(amazonpage.signInText.isDisplayed());
 	}
-	
 	
 	// the amazon invalid email test 
 	
@@ -70,8 +64,6 @@ public class AmazonLogin {
 	public void the_password_field_should_not_display() {
 	    Assert.assertFalse(utils.isElementPresent(amazonpage.signInPasswordField));
 	}
-
-	
 	// amazon search tests 
 	
 	@When("I enter the search term {string}")
@@ -90,6 +82,4 @@ public class AmazonLogin {
 	   
 	   Assert.assertEquals(actualResultText, item);
 	}
-	
-
 }

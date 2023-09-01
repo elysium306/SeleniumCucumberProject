@@ -1,9 +1,6 @@
 package utilities;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -13,8 +10,11 @@ import java.time.Duration;
 
 public class BrowserUtils {
 
+	private static BrowserUtils utils = new BrowserUtils();
+
+	private static WebDriver driver = Driver.getDriver();
 	Alert alert;
-	WebDriverWait letswait;
+	WebDriverWait wait;
 	static Select letsSelect;
 	Actions act;
 
@@ -39,16 +39,16 @@ public class BrowserUtils {
 	}
 
 	public void waitUntilAlertIsPresent() {
-		letswait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-		letswait.until(ExpectedConditions.alertIsPresent());
+		wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.alertIsPresent());
 	}
 
 	public void waitUntilElementVisible(WebElement element) {
-		letswait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-		letswait.until(ExpectedConditions.visibilityOf(element));
+		wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
-	public static void selectByVisibleText(WebElement element, String optionToSelect) {
+	public void selectByVisibleText(WebElement element, String optionToSelect) {
 		letsSelect = new Select(element);
 		letsSelect.selectByVisibleText(optionToSelect);
 	}
@@ -69,9 +69,9 @@ public class BrowserUtils {
 	}
 
 	// drag the source element to the target element
-	public void dragAndDrop(WebElement sourceElement, WebElement tagtetElement) {
+	public void dragAndDrop(WebElement sourceElement, WebElement targetElement) {
 		act = new Actions(Driver.getDriver());
-		act.dragAndDrop(sourceElement, tagtetElement).perform();
+		act.dragAndDrop(sourceElement, targetElement).perform();
 	}
 
 	// this method is for deleting the pre-populated value of an input field with
@@ -91,9 +91,25 @@ public class BrowserUtils {
 	}
 
 	// this method is for deleting the pre-populated value of an input field with
-	// command + a keys event for mac
+	// command + a keys event for Mac
 	public void clearTextOfAField(WebElement element) {
 		element.sendKeys(Keys.chord(Keys.COMMAND), "a");
 		element.sendKeys(Keys.DELETE);
+	}
+
+	public void waitForElementToBeClickable(WebElement element) {
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+
+	public void waitForElementToBeClickable(By locator) {
+		wait.until(ExpectedConditions.elementToBeClickable(locator));
+	}
+
+	public void waitForElementToBeVisible(WebElement element) {
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+
+	public void wait(int seconds) throws InterruptedException {
+		driver.wait(seconds);
 	}
 }
