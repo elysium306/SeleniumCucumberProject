@@ -12,9 +12,9 @@ import java.util.List;
 public class DBUtils {
 	
 	
-	private String dbHostName = "jdbc:mysql://database-1.cbf9mjnqgnfr.us-east-2.rds.amazonaws.com:3306/stock_trading_tracker";
-	private String username = "admin";
-	private String password = "Password123!";
+	private final String dbHostName = "jdbc:mysql://database-1.cbf9mjnqgnfr.us-east-2.rds.amazonaws.com:3306/stock_trading_tracker";
+	private final String username = "admin";
+	private final String password = "Password123!";
 	
 	private Connection connection;
 	private Statement statement;

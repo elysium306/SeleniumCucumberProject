@@ -1,4 +1,4 @@
-package test_files;
+package tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import utilities.Driver;
 
 public class Google_Test {
     private WebDriver driver;
-    private String baseURL = "https://www.amazon.com";
+    private final String baseURL = "https://www.amazon.com";
 
     @BeforeTest
     public void setup(){

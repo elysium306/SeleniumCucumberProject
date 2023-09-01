@@ -19,10 +19,9 @@ public class InventoryManager {
                 Thread.sleep(10);
             } catch (InterruptedException e) {
                 e.printStackTrace();
-                ;
             }
         }
-    };
+    }
 
     public void displaySoldProducts() {
         for (Product prod : soldProductsList) {
@@ -32,8 +31,8 @@ public class InventoryManager {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        };
-    };
+        }
+    }
 
 
 }
