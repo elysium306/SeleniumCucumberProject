@@ -12,7 +12,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SeleniumCucumberProject" target="17" />
-      <module name="seleniumCucumberProject" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
