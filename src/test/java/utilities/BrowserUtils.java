@@ -1,5 +1,7 @@
 package utilities;
 
+import java.time.Duration;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -48,7 +50,7 @@ public class BrowserUtils {
 		letswait.until(ExpectedConditions.visibilityOf(element));
 	}
 
-	public static void selectByVisibleText(WebElement element, String optionToSelect) {
+	public void selectByVisibleText(WebElement element, String optionToSelect) {
 		letsSelect = new Select(element);
 		letsSelect.selectByVisibleText(optionToSelect);
 	}
@@ -91,7 +93,7 @@ public class BrowserUtils {
 	}
 
 	// this method is for deleting the pre-populated value of an input field with
-	// command + a keys event for mac
+	// command + a keys event for Mac
 	public void clearTextOfAField(WebElement element) {
 		element.sendKeys(Keys.chord(Keys.COMMAND), "a");
 		element.sendKeys(Keys.DELETE);
